@@ -3,12 +3,11 @@
     padding: 5px 0 0;
 }
 
-.center-text{
-    align-content: center;
+.center-text {
     text-align: center;
 }
 
-#round-corners {
+.round-corners {
     background-color: #67ccff;
     width: 200px;
     height: 80px;
@@ -16,7 +15,7 @@
     margin: auto;
 }
 
-#bg-gradient {
+.bg-gradient {
     width: 200px;
     height: 80px;
     border-radius: 8%;
@@ -24,14 +23,115 @@
     margin: auto;
 }
 
-#shadows {
+.shadows {
+    /* box-shadow: width width blur spread colour */
     background-color: #67ccff;
     width: 200px;
     height: 80px;
     border-radius: 8%;
-    box-shadow: burlywood;
+    box-shadow: 5px 5px 5px 2px #a0eeff;
     margin: auto;
 }
+
+.transform-2D {
+    background-color: #67ccff;
+    width: 200px;
+    height: 80px;
+    border-radius: 8%;
+    transform: rotate(12deg);
+    margin: 30px auto;
+    transition: transform .8s ease-in-out;
+}
+
+.transform-2D:hover {
+    transform: rotate(-12deg);
+}
+
+/* 3D transformace */
+.transform-3D {
+    background-color: #67ccff;
+    width: 200px;
+    height: 80px;
+    border-radius: 8%;
+    margin: auto;
+    transition: transform 1s linear;
+}
+
+.transform-3D:hover {
+    transform: rotateX(180deg);
+}
+
+.transitions {
+    background-color: #67ccff;
+    width: 80px;
+    height: 80px;
+    border-radius: 8%;
+    margin: auto;
+    transition: .3s linear;
+
+}
+
+.transitions:hover {
+    background-color: #32a1ff;
+    width: 200px;
+}
+
+.columns {
+    margin: 5px 5px 10px 10px;
+    column-count: 2;
+}
+
+.column {
+    background-color: #67ccff;
+    border-radius: 12px;
+    min-height: 100px;
+    transition: .3s linear;
+
+}
+
+.column:hover {
+    background-color: #32a1ff;
+    color: white;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #67ccff;
+    width: 120px;
+    height: 60px;
+    border-radius: 12px;
+    transition: .3s linear;
+
+}
+
+.box:hover {
+    background-color: #32a1ff;
+    box-shadow: 8px 8px 5px #b2d8ff;
+    color: white;
+
+}
+
+.box p {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 
 
 
