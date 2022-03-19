@@ -6,6 +6,13 @@
 
 }
 
+/*@media (min-width: 600px) {*/
+/*    .container {*/
+/*        max-width: 600px;*/
+/*    }*/
+
+/*}*/
+
 .table-container {
     border: 1px solid #3379b6;
     border-radius: 4px;
@@ -14,9 +21,11 @@
 
 .table-container-head {
     background-color: #3379b6;
-    padding: 10px;
     color: white;
     min-width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .note {
@@ -36,4 +45,15 @@
 
 .sub-note {
 
+}
+
+.note-btn {
+    color: white;
+    background-color: #67ccff;
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+    border-style: none;
+    font-size: smaller;
+    margin-left: 10px;
 }
