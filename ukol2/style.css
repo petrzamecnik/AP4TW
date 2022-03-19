@@ -1,7 +1,39 @@
-
-
-@media (min-width: 1200px){
-    .container{
+@media (min-width: 1200px) {
+    .container {
         max-width: 800px;
     }
+
+
+}
+
+.table-container {
+    border: 1px solid #3379b6;
+    border-radius: 4px;
+    min-width: 320px;
+}
+
+.table-container-head {
+    background-color: #3379b6;
+    padding: 10px;
+    color: white;
+    min-width: 320px;
+}
+
+.note {
+    border: 1px solid #d8ebf5;
+    border-radius: 4px;
+    min-width: 320px;
+
+}
+
+.note-head {
+    background-color: #d8ebf5;
+    padding: 10px;
+    color: #1f6c92;
+    min-width: 320px;
+
+}
+
+.sub-note {
+
 }
