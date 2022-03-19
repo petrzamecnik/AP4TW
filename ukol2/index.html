@@ -51,10 +51,10 @@
 
                     </ul>
                     <!-- User -->
-                    <ul class="navbar-nav mb-2">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <i class="fa fa-fw fa-user"></i>Petr Novák
+                                <i class="fa fa-fw fa-user" style="margin-right: 6px"></i>Petr Novák
                             </a>
                         </li>
                     </ul>
@@ -67,20 +67,12 @@
 <!-- nabidka info -->
 <div class="container">
     <div class="row">
-        <div class="col-sm col-md-8  col-lg-9 pt-4 pt-sm-4 pt-md-4 pt-lg-4 text-md-start text-lg-start ">
+        <div class="col-sm col-md-8  col-lg-8 pt-4 pt-sm-4 pt-md-4 pt-lg-4 text-md-start text-lg-start ">
             <small>ADMIN IS > Nabídky > Nová Nabídka</small>
         </div>
-        <div class="col-sm pt-4 pt-sm-4 pt-md-4 pt-lg-4 text-md-end text-lg-end">
-            <small class="alert alert-success">Nabídka byla uložena</small>
+        <div class="col-sm pt-4 pt-sm-4 pt-md-4 pt-lg-4 text-sm-end text-md-end text-lg-end">
+            <small class="mybtn">Nabídka byla uložena</small>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
     </div>
 </div>
 
@@ -109,7 +101,7 @@
             <div class="d-flex flex-column center">
                 <label class="">Nabídka k poptávce</label>
                 <label class="form-label">
-                    <select class="width-100">
+                    <select class="width-100 height-30">
                         <option selected>Automatická svářečka pytlů (ID: 3)</option>
                         <option>Plamenomet</option>
                         <option>Raketoplán</option>
@@ -121,7 +113,7 @@
             <div class="d-flex flex-column">
                 <label class="">Datum vytvoření</label>
                 <label class="form-label">
-                    <input type="date" class="width-100">
+                    <input type="date" class="width-100 height-30">
                 </label>
             </div>
         </div>
@@ -132,7 +124,7 @@
             <div class="d-flex flex-column">
                 <label class="">Název</label>
                 <label class="form-label">
-                    <input type="text" class="width-100">
+                    <input type="text" class="width-100 height-30">
                 </label>
             </div>
         </div>
@@ -140,7 +132,7 @@
             <div class="d-flex flex-column">
                 <label class="">Datum akceptance</label>
                 <label class="form-label">
-                    <input type="date" class="width-100">
+                    <input type="date" class="width-100 height-30">
                 </label>
             </div>
         </div>
@@ -164,32 +156,35 @@
             <h6 class="table-responsive-lg">Připojit soubor</h6>
         </div>
 
-        <table class="table table-hover table-sm">
-            <thead>
-            <tr>
-                <th scope="col">Název</th>
-                <th scope="col">Název souboru</th>
-                <th scope="col">Datum nahrání</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Cenová nabídka</td>
-                <td>specifikace.pdf</td>
-                <td>25.5.2018</td>
-            </tr>
-            <tr>
-                <td>Návrh smlouvy</td>
-                <td>smlouva_navrh.pdf</td>
-                <td>25.5.2018</td>
-            </tr>
-            <tr>
-                <td>Čestné prohlášení</td>
-                <td>cestne_prohlaseni.doc</td>
-                <td>25.5.2018</td>
-            </tr>
-            </tbody>
-        </table>
+
+        <div class="p-1">
+            <table class="table table-hover table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">Název</th>
+                    <th scope="col">Název souboru</th>
+                    <th scope="col">Datum nahrání</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cenová nabídka</td>
+                    <td>specifikace.pdf</td>
+                    <td>25.5.2018</td>
+                </tr>
+                <tr>
+                    <td>Návrh smlouvy</td>
+                    <td>smlouva_navrh.pdf</td>
+                    <td>25.5.2018</td>
+                </tr>
+                <tr>
+                    <td>Čestné prohlášení</td>
+                    <td>cestne_prohlaseni.doc</td>
+                    <td>25.5.2018</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
@@ -208,9 +203,13 @@
             <p class="note-head" style="font-size: 12px">Petr Novák - 27.5.2018</p>
             <p class="p-2">Nabídku jsem odeslal 26.5:2018 přímo generálnímu řediteli</p>
         </div>
-        <div class="note m-2 mt-4">
-            <p class="note-head" style="font-size: 12px; background-color: #f0dcdd; color: #823737">Petr Novák - 26.5.2018</p>
+        <div class="note m-2 mt-4" style="border-color: #f0dcdd">
+            <p class="note-head" style="font-size: 12px; background-color: #f0dcdd; color: #813636">Petr Novák -
+                26.5.2018</p>
             <p class="p-2">Na nabídku jsme dali slevu 15% oproti normálu.</p>
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
